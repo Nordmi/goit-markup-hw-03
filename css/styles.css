@@ -3,6 +3,7 @@
   --title-text-color: #212121;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
+  --background-color-section: #f5f4fa;
 }
 
 body {
@@ -15,16 +16,33 @@ body {
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  border-bottom: 1px solid #ececec;
 }
 
 /* Site navigation */
 
-.link {
+
+
+.link { 	
   text-decoration: none;
 }
 
 .logo-link {
   color: var(--title-text-color);
+
   font-family: Raleway, sans-serif;
   font-weight: 700;
   font-size: 26px;
@@ -35,12 +53,14 @@ body {
   color: var(--accent-color);
 }
 
+
 .nav-link,
 .contact-link {
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
   text-decoration: none;
 }
 
@@ -64,13 +84,24 @@ body {
   color: var(--accent-color);
 }
 
+.container {
+  width: 1200px;
+  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 /* Hero */
 
 .section-hero {
   background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-title {
+  margin-bottom: 30px;
+
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -81,11 +112,17 @@ body {
 }
 
 .button {
+  display: inline-block;
+
   font-family: inherit;
   cursor: pointer;
+  text-align: center;
 }
 
 .button-primary {
+  padding: 10px 32px;
+  min-width: 200px;
+
   background-color: var(--accent-color);
   color: var(--primary-white-color);
   font-weight: 700;
@@ -104,6 +141,11 @@ body {
 
 /* Features */
 
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -118,6 +160,8 @@ body {
 }
 
 .features-subtitle {
+  margin-bottom: 10px;
+
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -130,7 +174,14 @@ body {
 
 /* Work */
 
+.work-section,
+.team-section {
+  padding-top: 0;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
@@ -138,12 +189,23 @@ body {
 
 /* Team */
 
+.team-section {
+  padding-top: 94px;
+  background-color: var(--background-color-section);
+}
+
 .team-list {
   background-color: #f5f4fa;
   line-height: 1.19;
 }
 
+.team-img {
+  margin-bottom: 30px;
+}
+
 .team-subtitle {
+  margin-bottom: 10px;
+
   font-weight: 500;
   font-size: 16px;
   text-align: center;
@@ -157,6 +219,8 @@ body {
 /* Portfolio html */
 
 .button-secondary {
+  padding: 6px 22px;
+
   color: var(--title-text-color);
   background: #f5f4fa;
   font-weight: 500;
@@ -180,7 +244,14 @@ body {
 }
 
 /* Our projects */
+
+.project-img {
+  margin-bottom: 20px;
+}
+
 .project-subtitle {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-size: 18px;
   line-height: 2;
@@ -199,7 +270,7 @@ body {
   background-color: #2f303a;
 }
 
-.footer > .logo-link {
+.footer .logo-link {
   color: var(--primary-white-color);
 }
 
