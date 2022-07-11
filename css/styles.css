@@ -28,19 +28,45 @@ p {
   padding: 0;
 }
 
+.container {
+  width: 1200px;
+  outline: 2px solid tomato;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
 .header {
   border-bottom: 1px solid #ececec;
 }
 
 /* Site navigation */
 
+.main-nav {
+  display: flex;
+}
 
+.nav {
+  display: flex;
+  align-items: center;
+}
 
-.link { 	
+.nav-list {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-list .nav-item + .nav-item {
+  /* background-color: teal; */
+  margin-left: 50px;
+}
+
+.link {
   text-decoration: none;
 }
 
 .logo-link {
+  display: flex;
   color: var(--title-text-color);
 
   font-family: Raleway, sans-serif;
@@ -56,6 +82,10 @@ p {
 
 .nav-link,
 .contact-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -75,6 +105,15 @@ p {
 
 /* Contacts */
 
+.contact-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.contact-list .contact-item + .contact-item {
+  margin-left: 50px;
+}
+
 .contact-link {
   color: var(--primary-text-color);
 }
@@ -82,14 +121,6 @@ p {
 .contact-link:hover,
 .contact-link:focus {
   color: var(--accent-color);
-}
-
-.container {
-  width: 1200px;
-  outline: 2px solid tomato;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin: 0 auto;
 }
 
 /* Hero */
