@@ -366,15 +366,11 @@ p {
 
 .footer {
   background-color: #2f303a;
-}
-
-.footer-container {
-  display: flex;
-  flex-direction: column;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer .logo-link {
-  padding-top: 60px;
   margin-bottom: 20px;
 
   color: var(--primary-white-color);
@@ -382,7 +378,6 @@ p {
 
 .address {
   font-style: normal;
-  padding-bottom: 60px;
 }
 
 .address-item {
